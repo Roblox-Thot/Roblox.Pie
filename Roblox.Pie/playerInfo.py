@@ -12,3 +12,7 @@ def get_xsrf(cookie=""):
         '.ROBLOSECURITY': cookie
     }).headers['x-csrf-token']
     return xsrf_header
+
+
+if __name__ == "__main__":
+    print(get_xsrf())
